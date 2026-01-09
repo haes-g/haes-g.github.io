@@ -20,11 +20,11 @@ type Props = {
 const Container = (props: Props) => (
   <div>
     <Header title={props.title} />
-    <section>
+    <article>
       <div id="container">
         {props.children}
       </div>
-    </section>
+    </article>
   </div>
 );
 
