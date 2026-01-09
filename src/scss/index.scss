@@ -1,11 +1,26 @@
 /** リセットCSSでリセットされない要素のCSSをカスタマイズする */
-ul {
+
+// 余白をリセット
+h3,
+p,
+ul,
+li {
   margin: 0;
   padding: 0;
+}
 
+// リストのスタイルをリセット
+ul {
   li {
     margin: 0;
     padding: 0;
     list-style-type: none;
   }
+}
+
+/** カスタムCSS定義 */
+
+// 要素の非表示
+.d-none {
+  display: none;
 }
