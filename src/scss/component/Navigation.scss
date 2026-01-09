@@ -1,0 +1,13 @@
+/** NavigationコンポーネントのCSSを定義 */
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+
+  li {
+    margin-left: 1.5rem;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

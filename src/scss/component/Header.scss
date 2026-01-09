@@ -1,0 +1,37 @@
+/** ヘッダーのCSSを定義 */
+header {
+
+  // 全体の構造
+  div {
+    display: flex;
+    align-items: center; // 子要素を垂直方向の中央に揃えます
+    padding: 10px 16px;
+
+    // h1と.navigationがそれぞれ50%の幅を持つように設定
+    >h1,
+    >.navigation {
+      flex-basis: 50%;
+    }
+  }
+
+  // 見出し
+  h1 {
+    font-size: 15pt;
+    font-weight: normal;
+    margin: 0; // flexレイアウトの崩れを防ぐため、デフォルトのマージンをリセット
+
+    a {
+      color: #000;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  // ナビゲーション
+  nav {
+    width: 100%;
+  }
+}
