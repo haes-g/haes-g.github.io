@@ -8,7 +8,7 @@ type Props = {
  * PageTitle.tsx
  * 画面のページを表示するパーツ
  * @param { string } title ページのタイトル
- * @returns 
+ * @returns { React.ReactNode }
  */
 const PageTitle = (props: Props) => (
   <h2>{props.title}</h2>

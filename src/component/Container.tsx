@@ -15,6 +15,7 @@ type Props = {
  * 
  * @param { React.ReactNode } children pages単位で構築した画面のReactNode
  * @param { string } title ページのタイトル
+ * @returns { React.ReactNode }
  */
 const Container = (props: Props) => (
   <div>
