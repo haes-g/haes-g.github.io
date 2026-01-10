@@ -1,4 +1,7 @@
 import Container from "../component/Container";
+import InlineGForm from "./home/InlineGForm";
+import CoverImage from "./home/CoverImage";
+import Schedule from "./home/Schedule";
 
 /**
  * Home.tsx
@@ -8,7 +11,9 @@ import Container from "../component/Container";
  */
 const Home = () => (
   <Container title="北海道アナログゲーム研究会">
-    <h1>hoge</h1>
+    <CoverImage />
+    <Schedule />
+    <InlineGForm />
   </Container>
 );
 

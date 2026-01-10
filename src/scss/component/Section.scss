@@ -16,7 +16,8 @@ section {
     font-size: $section-body-font-size;
   }
 
-  // 紹介記事用のCSS
+  // スケジュール、紹介記事用のCSS
+  .schedule,
   .features {
     background-color: rgba(246, 178, 107, 1);
     text-align: center;
@@ -30,10 +31,20 @@ section {
         font-size: 14pt;
         line-height: 1.38;
         margin: 12px 0;
+        color: #000;
 
         a {
           color: #000;
         }
+      }
+    }
+  }
+
+  .schedule {
+    ul {
+      li {
+        font-size: 24px;
+        font-weight: bold;
       }
     }
   }
