@@ -1,8 +1,9 @@
-import '../scss/component/Section.scss';
 import { isNull } from '../common/common';
+import '../scss/component/Section.scss';
 
 type Props = {
   title?: string;
+  className?: string;
   children: React.ReactNode;
 }
 
@@ -15,7 +16,7 @@ type Props = {
  */
 const Section = (props: Props) => (
   <section>
-    <div>
+    <div className={props.className}>
       <h3 className={isNull(props.title) ? 'd-none' : ''}>{props.title}</h3>
       {props.children}
     </div>
