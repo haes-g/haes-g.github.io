@@ -3,9 +3,10 @@
 // 色定義
 $color-white: #fff;
 $color-charcoal: rgb(28, 28, 28);
+$color-jasmine: rgb(255, 229, 153);
 
 // コンテンツの背景色
-$content-body: rgb(255, 229, 153);
+$content-body: $color-jasmine;
 
 // 章のフォント設定
 $section-heading-font-size: 24pt;
