@@ -3,10 +3,11 @@
 
 header {
 
-  // 全体の構造
-  div {
+  // ヘッダーのメインコンテナ
+  >div {
     display: flex;
     align-items: center;
+    justify-content: space-between; // タイトルとナビゲーションを両端に配置
     padding: 10px 16px;
     position: fixed;
     width: 100%;
@@ -14,40 +15,42 @@ header {
     left: 0;
     transition: background-color 0.3s;
     z-index: 1000;
+    background-color: $color-white;
 
-    // h1と.navigationがそれぞれ50%の幅を持つように設定
-    >h1,
-    >.navigation {
-      flex-basis: 50%;
-    }
-
+    // スクロール時のスタイル
     &.scrolled {
       background-color: $color-charcoal;
 
-      a {
+      // scrolled状態では、サイトタイトルとナビゲーションのリンク色を白に
+      .site-title a,
+      nav a {
         color: $color-white;
       }
     }
   }
 
-  // 見出し
-  h1 {
-    font-size: 15pt;
-    font-weight: normal;
-    margin: 0;
+  // サイトタイトル
+  .site-title {
+    h1 {
+      font-size: 15pt;
+      font-weight: normal;
+      margin: 0;
+      display: flex;
+      align-items: center;
 
-    a {
-      color: #000;
-      text-decoration: none;
+      a {
+        color: #000;
+        text-decoration: none;
+        transition: color 0.3s; // 色の変更を滑らかに
 
-      &:hover {
-        text-decoration: underline;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      img {
+        margin-right: 8px;
       }
     }
-  }
-
-  // ナビゲーション
-  nav {
-    width: 100%;
   }
 }

@@ -37,7 +37,12 @@ const Header = (props: Props) => {
   return (
     <header>
       <div className={isScrolled ? 'scrolled' : ''}>
-        <h1><a href="/">北海道アナログゲーム研究会</a></h1>
+        <div className="site-title">
+          <h1>
+            <img src="src/assets/images/test_logo_image.png" alt="北海道アナログゲーム研究会" width="38" />
+            <a href="/">北海道アナログゲーム研究会</a>
+          </h1>
+        </div>
         <Navigation />
       </div>
       <PageTitle title={props.title} />
